@@ -23,10 +23,6 @@
       {
         "value": "gpt-4-1106-preview",
         "label": "GPT-4-TURBO (BETA!)"
-      },
-      {
-        "value": "gpt-4-32k",
-        "label": "GPT-4-32K (WARNING!)"
       }
     ],
     "writingCharacters": [
