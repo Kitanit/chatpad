@@ -219,7 +219,7 @@ export function Layout() {
                     </ActionIcon>
                   </Tooltip>
                 </DatabaseModal>
-              )}}
+              )}
             </Center>
           </Navbar.Section>
         </Navbar>
