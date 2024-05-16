@@ -203,42 +203,6 @@ export function SettingsModal({ children }: { children: ReactElement }) {
             The displayed cost was not updated yet to reflect the costs for each
             model. Right now it will always show the cost for GPT-3.5 on OpenAI.
           </Alert>
-          <Select
-            label="OpenAI Auth (Custom Only)"
-            value={auth}
-            onChange={async (value) => {
-              setSubmitting(true);
-              try {
-                await db.settings.update("general", {
-                  openAiApiAuth: value ?? 'none',
-                });
-                notifications.show({
-                  title: "Saved",
-                  message: "Your OpenAI Auth has been saved.",
-                });
-              } catch (error: any) {
-                if (error.toJSON().message === "Network Error") {
-                  notifications.show({
-                    title: "Error",
-                    color: "red",
-                    message: "No internet connection.",
-                  });
-                }
-                const message = error.response?.data?.error?.message;
-                if (message) {
-                  notifications.show({
-                    title: "Error",
-                    color: "red",
-                    message,
-                  });
-                }
-              } finally {
-                setSubmitting(false);
-              }
-            }}
-            withinPortal
-            data={[{ "value": "none", "label": "None"}, { "value": "bearer-token", "label": "Bearer Token"}, { "value": "api-key", "label": "API Key"}]}
-          />
           <form
             onSubmit={async (event) => {
               try {
