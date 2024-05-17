@@ -235,7 +235,7 @@ export function Layout() {
                 height: "100%",
               }}
             >
-              {`${chat.description} - ${chat.totalTokens ?? 0} tokens ~ $${(
+              {`${chat.description} - ${chat.totalTokens ?? 0} tokens${(
                 ((chat.totalTokens ?? 0) * 0.002) /
                 1000
               ).toFixed(5)}`}
