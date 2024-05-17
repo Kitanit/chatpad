@@ -62,7 +62,7 @@ export function IndexRoute() {
                 <Button
                   size="md"
                   variant={openAiApiKey ? "light" : "filled"}
-                  leftIcon={<IconKey size={20} />}
+                  leftIcon={<IconKey size={30} />}
                 >
                   {openAiApiKey ? "Change OpenAI Key" : "Enter OpenAI Key"}
                 </Button>
