@@ -8,7 +8,7 @@
     "availableModels": [
       {
         "value": "gpt-3.5-turbo",
-        "label": "GPT-3.5-TURBO"
+        "label": "GPT-3.5-Turbo"
       },
       {
         "value": "gpt-4",
