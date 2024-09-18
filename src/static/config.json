@@ -25,6 +25,10 @@
       {
         "value": "gpt-4o-mini",
         "label": "GPT-4o mini"
+      },
+      {
+        "value": "o1-preview",
+        "label": "o1-preview"
       }
     ],
     "writingCharacters": [
