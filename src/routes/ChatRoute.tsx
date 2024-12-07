@@ -279,7 +279,7 @@ export function ChatRoute() {
                 { label: 'GPT-4о mini', value: 'gpt-4o-mini'},
                 { label: 'GPT-o1-mini', value: 'o1-mini'}
               ]}
-              onChange={async (value: 'gpt-3.5-turbo' | 'gpt-4' | 'gpt-4o') => {
+              onChange={async (value: 'gpt-4' | 'gpt-4o' | 'gpt-4o-mini' | 'o1-mini') => {
                 const model = value;
                 try {
                   await db.settings.update("general", {
